@@ -1,0 +1,6 @@
+[submodule "child-two-java"]
+	path = child-two-java
+	url = git@github.com:nxic/child-two-java.git
+[submodule "child-one-java"]
+	path = child-one-java
+	url = git@github.com:nxic/child-one-java.git
