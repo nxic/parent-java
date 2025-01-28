@@ -1,4 +1,4 @@
-package mn.nxic;
+package mn.nxic.bpm.resource;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
@@ -20,9 +20,9 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        twoService.sayHello();
-        oneService.sayHello();
+        String one = twoService.sayHello();
+        String two = oneService.sayHello();
 
-        return "Hello from Quarkus REST";
+        return "Hello from Quarkus REST and modules are greeting: " + one + " and " + two;
     }
 }
